@@ -1,0 +1,87 @@
+// general formatting section
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+// container formatting section
+.container{
+    background-color: lightgray;
+    border-radius: 15px;
+    font-family:'Times New Roman', Times, serif;
+
+    // tipography
+    h1{
+        margin-bottom: 2rem;
+    }
+
+    // card formatting section
+
+    // image fformatting section
+    img{
+        max-width: 100%;
+        display: block;
+        opacity: .5;
+        transition-duration: 1s;
+        cursor: pointer;
+    }
+
+    // card formatting section
+    .card{
+
+        height: 700px;
+        border: 2px solid rgb(160, 159, 159);
+        position: relative;
+
+        &:hover{
+            img{
+                opacity: 1;
+                transform: scale(.95);
+            }
+
+            h5{
+                color: black;;
+            }
+        }
+
+        .card-text{
+            margin-top: 10px;
+        }
+
+        a{
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+
+
+        // card body formatting section
+        .card-body{
+
+            h5{
+                color: lightgray;
+                transition-duration: 1s;
+            }
+
+            p, h6{
+                color: lightgrey;
+                transition-duration: 1s;
+            }
+
+
+            &:hover{
+                h5{
+                    color: black;
+                }
+
+                p, h6{
+                    color: grey;
+                }
+            }
+        }
+
+    }
+
+}
+
